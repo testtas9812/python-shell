@@ -1,6 +1,6 @@
 ---
 framework: mocha
-tier: large
+tier: small
 postMerge:
   pattern: 
     - "./test/test-python-shell.js"
