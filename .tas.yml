@@ -1,0 +1,17 @@
+---
+framework: mocha
+tier: large
+postMerge:
+  pattern: 
+    - "./test/test-python-shell.js"
+preMerge:
+  pattern:
+    - "./test/test-python-shell.js"
+preRun:
+     command:
+        - npm install
+        - npm run compile
+postRun:
+     command:
+        - node --version
+version: 1.0
